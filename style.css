@@ -1,0 +1,170 @@
+
+/* ===== GENERAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fc;
+  color: #172b4d;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #173b6c;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin: 0 0 12px;
+}
+
+header p {
+  font-size: 17px;
+  margin: 0;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 0 22px;
+}
+
+main h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+main > p {
+  color: #62718a;
+  line-height: 1.6;
+}
+
+/* ===== SEARCH INPUT ===== */
+#searchInput {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 18px;
+  margin: 22px 0;
+  border: 1px solid #cbd5e5;
+  border-radius: 10px;
+  font-size: 16px;
+  outline-color: #3978c5;
+}
+
+#searchInput:focus {
+  border-color: #3978c5;
+}
+
+/* ===== CATEGORY BUTTONS ===== */
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.category-btn {
+  padding: 10px 18px;
+  border: 1px solid #cbd5e5;
+  border-radius: 20px;
+  background: white;
+  color: #173b6c;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: #173b6c;
+  color: white;
+  border-color: #173b6c;
+}
+
+.category-btn:focus-visible {
+  outline: 2px solid #3978c5;
+  outline-offset: 3px;
+}
+
+/* ===== DICTIONARY CARDS ===== */
+#dictionary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  min-width: 0;
+  background: white;
+  border: 1px solid #e0e7f1;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 10px rgba(23, 43, 77, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1c5596;
+  font-size: 22px;
+}
+
+.card p {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.term-category {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background: #e8f0fc;
+  color: #245b96;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  color: #62718a;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 650px) {
+  main {
+    margin: 25px auto;
+    padding: 0 16px;
+  }
+
+  #dictionary {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+.term-category {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background: #e8f0fc;
+  color: #245b96;
+  font-size: 12px;
+  font-weight: bold;
+}

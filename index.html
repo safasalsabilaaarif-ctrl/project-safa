@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocaTIK - IT Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>💻 VocaTIK</h1>
+        <p>English for Information Technology</p>
+    </header>
+
+    <main>
+        <h2>Welcome to VocaTIK!</h2>
+        <p>Learn Information Technology vocabulary easily.</p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search IT vocabulary..."
+        >
+
+        <div id="categories">
+            <button class="category-btn active" data-category="All">All</button>
+            <button class="category-btn" data-category="Programming">Programming</button>
+            <button class="category-btn" data-category="Hardware">Hardware</button>
+            <button class="category-btn" data-category="Software">Software</button>
+            <button class="category-btn" data-category="Networking">Networking</button>
+            <button class="category-btn" data-category="Cybersecurity">Cybersecurity</button>
+        </div>
+
+        <div id="dictionary"></div>
+    </main>
+
+    <footer>
+        <p>VocaTIK | Learn English, Understand Technology.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
